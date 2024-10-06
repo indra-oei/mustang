@@ -1,3 +1,21 @@
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 4;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+#header.is-scrolling {
+    background-color: #00142E;
+}
+#header > img {
+    width: 100px;
+    height: 50px;
+}
 #heroBanner {
     height: 100vh;
     width: 100%;
@@ -6,4 +24,57 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.four-point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+.four-point:nth-child(1) {
+    background-color: #00142E;
+    color: #fff;
+}
+.four-point > h3 {
+    font-weight: 500;
+    margin: 0px;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+.four-point > p {
+    margin: 0px;
+}
+
+.mustang-img-tab {
+    width: 60%;
+}
+.nav-tabs {
+    border: none;
+    justify-content: center;
+    gap: 1.875rem;
+}
+.mustang-tab-link {
+    font-family: 'Bebas Neue';
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    color: #00142E;
+    padding: 6px 12px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.nav-tabs button.active {
+    background-color: #00142E;
+    color: #fff;
+}
+.form-btn {
+    border: none;
+    padding: 6px 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    font-weight: 500;
 }
